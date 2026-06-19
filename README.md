@@ -8,19 +8,10 @@ Created by Quintin G.!
 
 ## 🚀 Quick Setup for Deployment
 
-### 1. Database & Sync Logic (Supabase)
-All database files are now in the `/supabase` folder:
-- **Schema**: Run `supabase/migrations/01_schema.sql` and `03_add_walks.sql` in the Supabase SQL Editor.
-- **Sync Logic**: Create an Edge Function named `sync-mlb-stats` and paste `supabase/functions/sync-mlb-stats/index.ts`.
-- **Live Trigger**: The edge function is now configured to automatically run every time the app is loaded, ensuring stats are always live!
+This repository is a standard Next.js application that fetches data directly from the live MLB Stats API.
 
-### 2. Frontend Deployment (Vercel)
-This root folder is a standard Next.js app.
-1. Connect this repo to **Vercel**.
-2. Add these **Environment Variables**:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-3. Click **Deploy**.
+1. Connect this repository to **Vercel** or your preferred hosting provider.
+2. Click **Deploy** — no environment variables, database, or backend setup is required!
 
 ---
 
